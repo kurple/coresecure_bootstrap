@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Coresecure Sample</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <span class="navbar-text">Coresecure Sample</span>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapse_target">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Log In</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid main">
+      <div class="row">
+        <section class="col-md-6 section-video">
+          <video src="https://player.vimeo.com/external/194837908.sd.mp4?s=c350076905b78c67f74d7ee39fdb4fef01d12420&profile_id=164" controls ></video>
+        </section>
+        <section class="col-md-3 section-bird">
+          <div class="card">
+            <img src="https://openclipart.org/download/191741/Blue-Bird.svg" alt="a blue bird">
+            <div class="card-block">
+              <h3 class="card-title">A Blue Bird</h3>
+              <p>This is an open-source picture of a blue bird with a text block overlay.</p>
+            </div>
+          </div>
+        </section>
+        <section class="col-md-3 section-info">
+          <button class="special-div-button" onclick="showInfo()">Show the Hidden Div!</button>
+          <div class="special-div hidden">
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <nav class="navbar-expand-md navbar-dark bg-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Back to Top</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Log In</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+    </footer>
+    </div>
+
+    <script type="text/javascript">
+
+      const button = document.querySelector('.special-div-button');
+      const hiddenDiv = document.querySelector('.special-div');
+
+      hiddenDiv.innerHTML = `
+        <h1>User Agent:</h1>
+        <p>${navigator.userAgent}</p>
+        <h1>Browser Language:</h1>
+        <p>${navigator.language}</p>
+        <h1>Timezone Offset:</h1>
+        <p>${new Date().getTimezoneOffset()}</p>
+      `;
+
+      function showInfo() {
+        hiddenDiv.classList.toggle('hidden');
+
+        if (hiddenDiv.classList.contains('hidden')) {
+          button.innerHTML = 'Show the Hidden Div!';
+        } else {
+          button.innerHTML = 'Hide the Div!';
+        }
+      }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

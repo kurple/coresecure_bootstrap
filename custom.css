@@ -1,0 +1,62 @@
+/* custom styles to supplement Bootstrap 4 */
+
+.navbar-text {
+  margin-right: 50px;
+}
+
+.main {
+  margin-top: 60px;
+}
+
+.section-video video {
+  /* make video horizontally fit its container */
+  width: 100%;
+}
+
+.special-div-button {
+  /* make the special div's button fill its container */
+  width: 100%;
+}
+
+.hidden {
+  /* the special div will be hidden by default */
+  display: none;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer .nav-link {
+  display: inline;
+}
+/* Sticky footer styles
+Courtesy of https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/sticky-footer-navbar.css
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* set the fixed height of the footer here */
+  height: 60px;
+  /* vertically center the text there */
+  line-height: 60px;
+}
+
+@media(min-width: 768px) {
+
+  .footer .nav-link {
+    display: inline;
+  }
+
+}
