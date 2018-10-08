@@ -1,9 +1,5 @@
 /* custom styles to supplement Bootstrap 4 */
 
-.navbar-text {
-  margin-right: 50px;
-}
-
 .main {
   margin-top: 60px;
 }
@@ -23,13 +19,6 @@
   display: none;
 }
 
-.footer {
-  text-align: center;
-}
-
-.footer .nav-link {
-  display: inline;
-}
 /* Sticky footer styles
 Courtesy of https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/sticky-footer-navbar.css
 -------------------------------------------------- */
@@ -53,10 +42,19 @@ body {
   line-height: 60px;
 }
 
+.footer ul {
+  max-width: 500px;
+  margin: auto;
+}
+
+.footer .nav-link {
+  padding: 0;
+}
+
 @media(min-width: 768px) {
 
-  .footer .nav-link {
-    display: inline;
+  .header ul {
+    width: 500px;
   }
 
 }
